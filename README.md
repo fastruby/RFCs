@@ -1,2 +1,2 @@
 # RFCs
-Requests for Comments for regarding tools and processes
+Requests for Comments regarding tools and processes
