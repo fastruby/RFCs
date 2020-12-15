@@ -48,7 +48,7 @@ Cons:
 
 ### Custom made gem
 
-We could also create a custom gem or fork any of those if we think it's worth it. The main idea is that, when adding a new env variable, we should be able to add that some configuration and documentation related to that variable and check it at boot, that way we can be sure everyone will have the right env variables.
+We could also create a custom gem or fork any of those if we think it's worth it. The main idea is that, when adding a new env variable, we should be able to add some configuration and documentation related to that variable and check it during boot. That way we can be sure everyone will have the right env variables.
 
 Pros:
 - We would have full control on what it supports and how it's used to adapt it to our needs
