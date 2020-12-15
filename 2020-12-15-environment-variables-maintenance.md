@@ -56,6 +56,6 @@ Pros:
 Cons:
 - It will take some time to get things right and it then needs to be maintained
 
-## What this gems don't do
+## What these gems don't do
 
-This gems would be used to configure which variables are needed and the format of the values but these WON'T provide default values. For that we'll keep using dotenv and the `.env` and `.env.sample` file for quick setup of defaults.
+These gems would be used to configure which variables are needed and the format of the values but these WON'T provide default values. For that we'll keep using dotenv and the `.env` and `.env.sample` file for quick setup of defaults.
