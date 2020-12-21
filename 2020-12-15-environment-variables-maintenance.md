@@ -31,7 +31,8 @@ Pros:
 - Documentation can be added as comments on the Envfile
 
 Cons:
-- This does NOT support optional env variables (i.e.: variables that can be undefined but if present should have a specific format)
+- This does NOT support format validation of optional env variables (i.e.: variables that can be undefined but if present should have a specific format)
+- A new dependency
 
 ### Prius
 
@@ -39,12 +40,13 @@ URL: https://github.com/gocardless/prius
 
 Pros:
 - We can configure different variables for each environment
-- Supports optional variables
+- Supports format validation of optional variables
 - Documentation can be added as comments for each variable
 
 Cons:
 - To use this gem we need to call `Prius.load(:some_var)` for all env variables we want to use (we could extract this method calls into a separated file and require that file so we don't pollute the boot files though, not that big of a deal)
 - It can validate only a few types of values
+- A new dependency
 
 ### Custom made gem
 
@@ -55,6 +57,18 @@ Pros:
 
 Cons:
 - It will take some time to get things right and it then needs to be maintained
+
+### Custom script / initializer
+
+Instead of using a custom gem we could create a custom script to have in the initializers to check the ENV variables.
+
+Pros:
+- No external gem dependency
+- Full control of what it supports
+
+Cons:
+- It will take some time to get things right and it then needs to be maintained
+- If we need to update the script we would need to go over all the projects using it and copy/paste the fixes
 
 ## What these gems don't do
 
