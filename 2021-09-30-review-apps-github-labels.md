@@ -2,7 +2,7 @@
 
 ## Problem:
 
-Heroku's Review Apps are created automatically in many projects when a PR is created/updated. While this helps in the QA process, this is has downsides in some cases:
+Heroku's Review Apps are created automatically in many projects when a PR is created/updated. While this helps in the QA process, this has downsides in some cases:
 
 - if the PR is a work-in-progress, the review app is probably not needed yet
 - if the PR is waiting for a review of the code, the review app is probably not needed yet
