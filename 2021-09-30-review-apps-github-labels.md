@@ -7,7 +7,7 @@ Heroku's Review Apps are created automatically in many projects when a PR is cre
 - if the PR is a work-in-progress, the review app is probably not needed yet
 - if the PR is waiting for a review of the code, the review app is probably not needed yet
 - if the PR changes something that can't really be QA'd with a review app, it's not needed at all (like updating the readme, setting up docker, fixing a broken test, etc)
-- Automatically-created Review Apps are deleted after 2 days so the person doing QA has to go to heroku and re-create the review app manually if it's done after that time
+- Automatically-created Review Apps are deleted after 2 days so the person doing QA has to go to heroku and re-create the review app manually if it's more than 2 days since the Review App has been created
 
 In all those cases, we have Review Apps running for a couple of days that nobody is using, costing money, and when somebody actually needs to use them, the review app is already destroyed and the re-creating process involves many steps.
 
