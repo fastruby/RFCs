@@ -92,7 +92,7 @@ We've found some resources and existing GitHub Actions to use as reference for m
 - We could have a workflow configuration that destroys the review app when a `ready-to-merge` label is added (so the QA person doesn't need to remember to add the `destroy-review-app` label in that case).
 - We should have a workflow configuration that destroys the review app when the PR is closed (either close or merge+close) to prevent stale review apps running when not needed anymore.
 
-In these 2 cases, we would re-use the previous GitHub Action that destroy the Review App by just setting other jobs for the specific triggers. Here's an example of a GitHub Workflows job when a PR is closed https://github.com/arielj/test-gh-labels/blob/main/.github/workflows/on_closed.yml.
+In these 2 cases, we would re-use the previous GitHub Action that destroys the Review App by just setting other jobs for the specific triggers. Here's an example of a GitHub Workflows job when a PR is closed https://github.com/arielj/test-gh-labels/blob/main/.github/workflows/on_closed.yml.
 
 # Final thoughts:
 
