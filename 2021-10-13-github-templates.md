@@ -37,7 +37,7 @@ information than we require - as this will discourages contributions.
     <!--- If it fixes an open issue, please link to the issue here. -->
 
     ## How Has This Been Tested?
-    <!--- Include any relevant details about your testing environment -->
+    <!--- Include any relevant details about your testing environment and the steps you followed -->
 
     ## Screenshots (if appropriate):
 
@@ -50,7 +50,7 @@ information than we require - as this will discourages contributions.
 ```
     <!--- Before we start... -->
     <!--- Did you check the documentation for answers? -->
-    <!--- Did you sure that this issue has not already been filed? -->
+    <!--- Did you make sure that this bug has not already been reported? -->
 
     ## Expected Behavior
     <!--- Tell us what should happen -->
@@ -69,18 +69,9 @@ information than we require - as this will discourages contributions.
     3.
     4.
 
-    ## Your Environment
-    <!--- Include as many relevant details about the environment you experienced the bug in -->
-    * What branch/commit are you on?:
-    * Version used:
-    * Environment name and version (e.g. Chrome 39, node.js 5.4):
-    * Operating System and version (desktop or mobile):
-
-    **Screenshots and Videos**
-    <!--- If the issue has an effect in the frontend, include any relevant screenshots and videos here. -->
-
-    **Logs**
-    <!--- Include relevant log snippets or files here. -->
+    ## Additional Information
+    <!--- Include any relevant details about your environment (branch, browser, OS) -->
+    <!--- and the bug (screenshots, logs, etc) -->
 
     **I will abide by the [code of conduct](<LINK TO CODE OF CONDUCT HERE>)**
 ```
@@ -90,11 +81,10 @@ information than we require - as this will discourages contributions.
 ```
     <!--- Before we start... -->
     <!--- Did you check the documentation for this feature? -->
-    <!--- Did you sure that this issue has not already been filed? -->
     <!--- Did you make sure that this feature has not already been requested? -->
 
-    ## Detailed Description
-    <!--- Provide a detailed description of the change or addition you are proposing -->
+    ## Description
+    <!--- Provide a description of the change or addition you are proposing -->
 
     ## Possible Implementation
     <!--- Optionally suggest an idea for implementing addition or change -->
