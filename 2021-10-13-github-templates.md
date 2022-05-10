@@ -41,7 +41,8 @@ If we don't add a contributing.md we need to guide users to the README, like thi
     ## How Has This Been Tested?
     <!--- Include any relevant details about your testing environment and the steps you followed -->
 
-    ## Screenshots (if appropriate):
+    ## Screenshots:
+    <!-- Add screenshots (applicable to any UI changes) -->
 
     **I will abide by the [code of conduct](<LINK TO CODE OF CONDUCT HERE>)**
 ```
