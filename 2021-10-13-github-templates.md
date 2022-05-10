@@ -21,6 +21,11 @@ information than we require - as this will discourages contributions.
 We recommend that each project contains a contributing.md. When someone opens a pull
 request or creates an issue, github will show them a link to that file.
 
+If we don't add a contributing.md we need to guide users to the README, like this:
+```
+<!--- Please read the README before submitting pull requests for this project. -->
+```
+
 ## Templates:
 
 ### Pull Requests
@@ -28,7 +33,6 @@ request or creates an issue, github will show them a link to that file.
 ```
     ## Description
     <!--- Describe your changes in detail -->
-    <!--- Please read the README before submitting pull requests for this project. -->
 
     ## Motivation and Context
     <!--- Why is this change required? What problem does it solve? -->
