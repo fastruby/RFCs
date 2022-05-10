@@ -23,11 +23,6 @@ information than we require - as this will discourages contributions.
 ### Pull Requests
 
 ```
-    <!--- Before we start... -->
-    <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-    <!--- Did you update any relevant documentation -->
-    <!--- Did you add tests to cover new changes -->
-
     ## Description
     <!--- Describe your changes in detail -->
     <!--- Please read the README before submitting pull requests for this project. -->
