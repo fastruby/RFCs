@@ -18,6 +18,9 @@ Come up with a consistent set of Github templates. The templates should include 
 only the ESSENTIAL information we require. We want to make sure that we don't ask for more
 information than we require - as this will discourages contributions.
 
+We recommend that each project contains a contributing.md. When someone opens a pull
+request or creates an issue, github will show them a link to that file.
+
 ## Templates:
 
 ### Pull Requests
