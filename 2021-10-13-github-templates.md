@@ -14,7 +14,7 @@ an issue.
 
 ## Proposal:
 
-Come up with a consistent set of Github templates. The templates should include prompts
+Come up with a consistent set of Github templates. The templates should include prompts for
 only the ESSENTIAL information we require. We want to make sure that we don't ask for more
 information than we require - as this will discourages contributions.
 
@@ -32,7 +32,7 @@ information than we require - as this will discourages contributions.
 
     ## How Has This Been Tested?
     <!--- Include any relevant details about your testing environment and the steps you followed -->
-    I am using <Safari|Firefox|Chrome> then I visit <the users path>
+    <!--- For example: I am using [Safari|Firefox|Chrome] then I visit [the users path] -->
 
     ## Screenshots:
     <!-- Add screenshots (applicable to any UI changes) -->
@@ -50,11 +50,11 @@ information than we require - as this will discourages contributions.
 
     ## Expected Behavior
     <!--- Tell us what should happen -->
-    <!--- When I [do X], it should [produce Y] -->
+    <!--- For example: When I [do X], it should [produce Y] -->
 
     ## Actual Behavior
     <!--- Tell us what happens instead -->
-    <!--- When I [did X], it [produces Y] -->
+    <!--- For example: When I [did X], it [produced Y] -->
 
     ## Possible Fix
     <!--- Optionally suggest a fix or work around -->
@@ -62,7 +62,7 @@ information than we require - as this will discourages contributions.
     ## To Reproduce
     <!--- Optionally provide a link to a live example -->
 
-    <!--- Otherwise, please provide a set of steps to -->
+    <!--- Otherwise, please provide a set of reproduction steps -->
     1.
     2.
     3.
@@ -90,12 +90,13 @@ information than we require - as this will discourages contributions.
 
     ## Resources:
     <!--- If you have resources related to the implementation or research for this feature, add them here. -->
-    <!--- If possible, include any mockup idea related to the requested feature. -->
+    <!--- If possible, include any mockup ideas related to the requested feature. -->
 
     **I will abide by the [code of conduct](<LINK TO CODE OF CONDUCT HERE>)**
 ```
 
 ## Next steps:
+
 We recommend that each project contains a contributing.md. When someone opens a pull
 request or creates an issue, github will show them a link to that file.
 
@@ -109,7 +110,7 @@ Repetitive prmpts can be moved to the contributing.md file. Things we might want
 <!--- Did you check the documentation for this feature? -->
 <!--- Did you make sure that this feature has not already been requested? -->
 
-Another idea is to simplify the steps required to add templates to a project. One solution suggested by Ernesto is to add a shell script.
+Another idea is to simplify the steps needed to add templates to a project. One solution suggested by Ernesto is to add a shell script.
 We can execute the shell script like this:
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/fastruby/install/templates/install.sh)
