@@ -18,14 +18,6 @@ Come up with a consistent set of Github templates. The templates should include 
 only the ESSENTIAL information we require. We want to make sure that we don't ask for more
 information than we require - as this will discourages contributions.
 
-We recommend that each project contains a contributing.md. When someone opens a pull
-request or creates an issue, github will show them a link to that file.
-
-If we don't add a contributing.md we need to guide users to the README, like this:
-```
-<!--- Please read the README before submitting pull requests for this project. -->
-```
-
 ## Templates:
 
 ### Pull Requests
@@ -103,13 +95,28 @@ If we don't add a contributing.md we need to guide users to the README, like thi
     **I will abide by the [code of conduct](<LINK TO CODE OF CONDUCT HERE>)**
 ```
 
-## Final thoughts:
+## Next steps:
+We recommend that each project contains a contributing.md. When someone opens a pull
+request or creates an issue, github will show them a link to that file.
 
-For the sake of simplicity we would prefer to have a single set of templates. We might
-find it necessary to provide two sets of templates: one for internal project and another
-for open source projects.
+If we don't add a contributing.md we need to guide users to the README, like this:
+```
+<!--- Please read the README before submitting pull requests for this project. -->
+```
 
-## Existing templates
+Repetitive prmpts can be moved to the contributing.md file. Things we might want in the contributing.md instead include:
+<!--- Before creating a feature request, please, answer the following questions -->
+<!--- Did you check the documentation for this feature? -->
+<!--- Did you make sure that this feature has not already been requested? -->
+
+Another idea is to simplify the steps required to add templates to a project. One solution suggested by Ernesto is to add a shell script.
+We can execute the shell script like this:
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/fastruby/install/templates/install.sh)
+
+
+
+## References
 
 ### Pull request templates
 
@@ -128,3 +135,6 @@ for open source projects.
  - [skunk.fyi - feature request](https://github.com/fastruby/skunk.fyi/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
  - [Points - feature request](https://github.com/fastruby/points/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
  - [Dash - feature request](https://github.com/fastruby/dash/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
+
+### External template examples
+- [forem - examples](https://github.com/forem/forem/tree/main/.github)
