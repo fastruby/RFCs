@@ -58,11 +58,11 @@ If we don't add a contributing.md we need to guide users to the README, like thi
 
     ## Expected Behavior
     <!--- Tell us what should happen -->
-    When I <did X>, I was expecting it to <produce Y>
+    <!--- When I [do X], it should [produce Y] -->
 
     ## Actual Behavior
     <!--- Tell us what happens instead -->
-    When I <did X>, it <produced Y>
+    <!--- When I [did X], it [produces Y] -->
 
     ## Possible Fix
     <!--- Optionally suggest a fix or reason for the bug -->
