@@ -40,6 +40,7 @@ If we don't add a contributing.md we need to guide users to the README, like thi
 
     ## How Has This Been Tested?
     <!--- Include any relevant details about your testing environment and the steps you followed -->
+    I am using <Safari|Firefox|Chrome> then I visit <the users path>
 
     ## Screenshots:
     <!-- Add screenshots (applicable to any UI changes) -->
@@ -51,7 +52,7 @@ If we don't add a contributing.md we need to guide users to the README, like thi
 ### Issues: Bug Reports
 
 ```
-    <!--- Before we start... -->
+    <!--- Before creating a bug report, please, answer the following questions -->
     <!--- Did you check the documentation for answers? -->
     <!--- Did you make sure that this bug has not already been reported? -->
 
@@ -66,9 +67,11 @@ If we don't add a contributing.md we need to guide users to the README, like thi
     ## Possible Fix
     <!--- Optionally suggest a fix or reason for the bug -->
 
-    ## Steps to Reproduce
-    <!--- Provide a link to a live example, or an unambiguous set of steps to -->
-    <!--- reproduce this bug. Include code to reproduce, if relevant -->
+    ## To Reproduce
+    <!--- Do you have a live example in a sample repo?
+          If so, please provide a link to it here. -->
+
+    <!--- Otherwise, please provide a set of steps to -->
     1.
     2.
     3.
@@ -84,7 +87,7 @@ If we don't add a contributing.md we need to guide users to the README, like thi
 ### Issues: Feature Requests
 
 ```
-    <!--- Before we start... -->
+    <!--- Before creating a feature request, please, answer the following questions -->
     <!--- Did you check the documentation for this feature? -->
     <!--- Did you make sure that this feature has not already been requested? -->
 
@@ -92,11 +95,11 @@ If we don't add a contributing.md we need to guide users to the README, like thi
     <!--- Provide a description of the change or addition you are proposing -->
 
     ## Possible Implementation
-    <!--- Optionally suggest an idea for implementing addition or change -->
+    <!--- Optionally suggest an idea to implement or a workaround to fix the issue -->
 
     ## Resources:
     <!--- If you have resources related to the implementation or research for this feature, add them here. -->
-    <!--- Include any mockup idea related to the requested feature if it applies. -->
+    <!--- If possible, include any mockup idea related to the requested feature. -->
 
     **I will abide by the [code of conduct](<LINK TO CODE OF CONDUCT HERE>)**
 ```
