@@ -65,11 +65,10 @@ If we don't add a contributing.md we need to guide users to the README, like thi
     <!--- When I [did X], it [produces Y] -->
 
     ## Possible Fix
-    <!--- Optionally suggest a fix or reason for the bug -->
+    <!--- Optionally suggest a fix or work around -->
 
     ## To Reproduce
-    <!--- Do you have a live example in a sample repo?
-          If so, please provide a link to it here. -->
+    <!--- Optionally provide a link to a live example -->
 
     <!--- Otherwise, please provide a set of steps to -->
     1.
