@@ -6,7 +6,7 @@ We like to use Reek in many of our projects as one of the tools to aid in improv
 
 ## Proposed initial Reek configuration
 
-This RFC is a proposal of a default Reek configuration file that we would use in any new project to reduce the number of warnings and the need of exceptions that we see with the [default configuration](https://github.com/troessner/reek/blob/a8649370ced77dd0e798b00dc97ff916f68bb002/docs/defaults.reek.yml), and to also define some guideline or expectation on how we can decide when to add exceptions and modifications for different needs.
+This RFC is a proposal of a default Reek configuration file that we would use in established projects to reduce the number of warnings and the need of exceptions that we see with the [default configuration](https://github.com/troessner/reek/blob/a8649370ced77dd0e798b00dc97ff916f68bb002/docs/defaults.reek.yml), and to also define some guideline or expectation on how we can decide when to add exceptions and modifications for different needs.
 
 ### Default .reek configuration file
 
@@ -72,6 +72,24 @@ exclude_paths:
 When applying this configuration, projects will still need exceptions in some cases where the code smell is not flagging code we want to change or when there's a warning on code that's in the same file but out of the scope of the work done.
 
 It is expected that the team working on a given project will keep an eye when these exceptions are used, and there should be a clear explanation to skip a code smell instead of fixing it (which is a valid thing to do, but shouldn't be done just in order to not address it).
+
+## How is this going to impact our internal teams and their day to day?
+
+In the near future we plan to adapt this configuration in these projects:
+
+- FastRuby.io
+- OmbuLabs.com
+- Points
+
+Other project will not adapt this configuration. We expect Ruby and Rails projects to reach certain maturity before we adapt these standards.
+
+## What projects are not a good fit for this new standard?
+
+We do NOT want to adapt this standard on these types of projects:
+
+- Prototypes
+- Unproven MVPs that might be discarded
+- One-off internal tools that might be obsolete in a year
 
 ## What this file is NOT
 
