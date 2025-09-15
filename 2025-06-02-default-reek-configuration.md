@@ -24,6 +24,11 @@ detectors:
     max_calls: 3 # original is 1
   NilCheck:
     enabled: false # in some projects were this was enabled, it was a false positive being ignored
+  UncommunicativeVariableName:
+    accept:
+      - e
+      - x
+      - _
   UnusedPrivateMethod:
     enabled: true # default is false, we are still disabling it for controllers and models below
   UtilityFunction:
