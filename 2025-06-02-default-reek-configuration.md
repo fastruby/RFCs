@@ -16,19 +16,21 @@ It's a combination of the [official `rails-friendly` configuration recommended i
 
 ```yml
 detectors:
-  IrresponsibleModule:
-    enabled: false # we don't really add module descriptions ever
-  TooManyStatements:
-    max_statements: 10 # original is 5
   DuplicateMethodCall:
     max_calls: 3 # original is 1
+  IrresponsibleModule:
+    enabled: false # we don't really add module descriptions ever
   NilCheck:
     enabled: false # in some projects were this was enabled, it was a false positive being ignored
+  TooManyStatements:
+    max_statements: 10 # original is 5
   UncommunicativeVariableName:
     accept:
-      - e
-      - x
-      - _
+      - e # common in `rescue => e` (short for `exception`)
+      - x # common in one-liners
+      - _ # common when ignoring a parameter
+      - k # common when looping through hashes (short for `key`)
+      - v # common when looping through hashes (short for `value`)
   UnusedPrivateMethod:
     enabled: true # default is false, we are still disabling it for controllers and models below
   UtilityFunction:
@@ -36,14 +38,16 @@ detectors:
 
 directories: # reek's recommendation for Rails applications unless a comment is added
   "app/controllers":
-    NestedIterators:
-      max_allowed_nesting: 2
-    UnusedPrivateMethod:
-      enabled: false
     InstanceVariableAssumption:
       enabled: false
+    NestedIterators:
+      max_allowed_nesting: 2
     TooManyInstanceVariables:
       enabled: false # instance variables are the way to pass data to views, it's expected
+    TooManyStatements:
+      enabled: false
+    UnusedPrivateMethod:
+      enabled: false
   "app/helpers":
     UtilityFunction:
       enabled: false
@@ -53,21 +57,13 @@ directories: # reek's recommendation for Rails applications unless a comment is 
   "app/models":
     InstanceVariableAssumption:
       enabled: false
+    TooManyStatements:
+      enabled: false
     UnusedPrivateMethod:
       enabled: false
-  "db/migrate":
-    FeatureEnvy:
-      enabled: false # keeps complaining about `t.string :col_name` as feature envy calling `t` more than `self`
-    UncommunicativeVariableName:
-      enabled: false # complains `t` is uncommunicative, but it's a common short name for `table`
-    TooManyStatements:
-      enabled: false # long tables require many statements, reek keeps complaining about them
-    DuplicateMethodCall:
-      enabled: false # complains about duplicated methods when a migration creates more than 1 table, which cannot be "fixed"
-    UtilityFunction:
-      enabled: false # complains about utility functions in generated migrations, it's ok to have utility functions in migrations
 
 exclude_paths:
+  - db/migrate
   - node_modules # in case any node package has a .rb file (like the styleguide)
   - vendor # in case gems are bundle inside the project's folder vendor folder
 ```
@@ -86,7 +82,7 @@ In the near future we plan to adapt this configuration in these projects:
 - OmbuLabs.com
 - Points
 
-Other project will not adapt this configuration. We expect Ruby and Rails projects to reach certain maturity before we adapt these standards.
+Other project will not adapt this configuration. We expect Ruby and Rails projects to reach certain maturity before we adapt these standards. Ops will decide when a project has reached this maturity.
 
 ## What projects are not a good fit for this new standard?
 
